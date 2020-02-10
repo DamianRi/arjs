@@ -1,3 +1,5 @@
+import React from 'react';
+
 class Box extends React.Component{
 
     constructor(props){
@@ -25,28 +27,22 @@ function Plane(props) {
     );
 }
 
-
+class Scene extends React.Component{
+    render(){
+        return(
+            <a-scene></a-scene>
+        );
+    }
+}
+/*
 function Scene(props) {
     return(
-        <a-scene>
+        <a-scene></a-scene>
+        );
+    }
+*/
 
-            <Box 
-            color="red" 
-            pos="-5 2 -5"></Box>
-            
-            <Plane 
-            name="Plano1"
-            pos="0 0 -5" 
-            rot="-90 0 0" 
-            scale="10 10 10" 
-            color="gray" ></Plane>
-        
-        </a-scene>
-    );
-}
-
-
+/*
 const domContainer = document.querySelector('#root');
 ReactDOM.render(<Scene/>, domContainer);
-/*
 */
